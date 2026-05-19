@@ -13,3 +13,6 @@ A collection of small embedded projects, mostly ESP32 / ESP32-S3.
 - [BlinkCpp](BlinkCpp/) — classic blink rewritten in Embedded C++ on ESP-IDF: superloop, no heap/STL, `constexpr` config, ISR-driven button switching three LED modes.
 - [RelayMotor](RelayMotor/) — relay contact response-time measurement (ISR-based timing, 10-sample averaging) plus soft PWM motor speed control via potentiometer and LEDC.
 - [Stm32AdcPot](Stm32AdcPot/) — STM32F411 (BlackPill, STM32Cube HAL) potentiometer ADC: compares manual vs. VREFINT-calibrated voltage and tabulates the error.
+- [Superloop3Leds](Superloop3Leds/) — three LEDs blinking at 200/500/1000 ms from a single non-blocking superloop, `millis()`-based.
+- [ButtonDebounce](ButtonDebounce/) — polling state-machine GPIO button debounce (final variant of a five-step debounce exercise: raw IRQ → time-based → level-based → polling → RC filter).
+- [FanTimer](FanTimer/) — cyclic extraction-fan controller using `esp_timer` periodic + one-shot callbacks, fully independent of the main loop, with re-entry guard.
