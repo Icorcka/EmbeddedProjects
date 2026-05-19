@@ -10,3 +10,4 @@ A collection of small embedded projects, mostly ESP32 / ESP32-S3.
 - [SpeedLights](SpeedLights/) — cycle through blink speeds using an external button and the BOOT button.
 - [AdcLdr](AdcLdr/) — LDR ADC reader on ESP32-S3, compares calculated vs. `analogReadMillivolts()` voltage and sweeps resolution/attenuation.
 - [BlinkCpp](BlinkCpp/) — classic blink rewritten in Embedded C++ on ESP-IDF: superloop, no heap/STL, `constexpr` config, ISR-driven button switching three LED modes.
+- [RelayMotor](RelayMotor/) — relay contact response-time measurement (ISR-based timing, 10-sample averaging) plus soft PWM motor speed control via potentiometer and LEDC.
